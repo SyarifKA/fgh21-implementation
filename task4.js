@@ -1,7 +1,7 @@
 // Mengurutkan bilangan dengan angka 0 sebagai pemisah
 
 const divideAndSort = function (angka) {
-    
+
     let strAngka = angka+''
     let ba, bb = 0
     
@@ -16,12 +16,12 @@ const divideAndSort = function (angka) {
                 temp = [...temp, +strAngka[bb]]
             }
             // Urutkan hasil filter
-            for (let i = 0; i < temp.length - 1; i++) {
-                for (let j = 0; j < temp.length - 1 - i; j++) {
-                    if (temp[j] > temp[j + 1]) {
-                        let result = temp[j];
-                        temp[j] = temp[j + 1];
-                        temp[j + 1] = result;
+            for (let j = 0; j < temp.length - 1; j++) {
+                for (let k = 0; k < temp.length - 1 - j; j++) {
+                    if (temp[k] > temp[k + 1]) {
+                        let result = temp[k];
+                        temp[k] = temp[k + 1];
+                        temp[k + 1] = result;
                     }
                 }
             }
@@ -32,9 +32,9 @@ const divideAndSort = function (angka) {
     }
     
     let hasil2 = ''
-    for (let i = 0; i < hasil1.length; i++) {
-        for (let j = 0; j < hasil1[i].length; j++) {
-            hasil2 += hasil1[i][j]
+    for (let l = 0; l < hasil1.length; l++) {
+        for (let m = 0; m < hasil1[l].length; m++) {
+            hasil2 += hasil1[l][m]
         }
     }
     
